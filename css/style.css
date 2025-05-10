@@ -592,28 +592,37 @@ h3 {
 
 .footer {
     background-color: #2E2F42;
-    padding: 96px 16px;
 }
 
 .footer-container-flex {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 96px 16px;
+}
+
+.wraper-devise {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
     flex-shrink: 0;
 }
 
 .footer-logo {
     margin-bottom: 16px;
+
 }
 
 .footer-text {
     color: #F4F4FD;
     max-width: 264px;
+    font-weight: 400px;
 }
 
 .span-studio {
@@ -621,7 +630,9 @@ h3 {
 }
 
 .footer-social {
-  margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-social-text {
@@ -642,6 +653,7 @@ h3 {
     display: flex;
     gap: 16px;
     flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .section-footer-icon-li {
@@ -677,6 +689,11 @@ h3 {
 }
 
 /* form */
+.wraper-footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .footer-form-text {
     font-weight: 500;
@@ -690,7 +707,7 @@ h3 {
 .footer-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 
 }
 
@@ -701,7 +718,7 @@ h3 {
 .footer-input {
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    width: 264px;
+    min-width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
@@ -753,6 +770,48 @@ h3 {
     margin-left: 16px;
 }
 
+@media (min-width: 768px) {
+    .footer-container-flex {
+        flex-direction: column;
+        gap: 72px;
+        padding: 96px 108px;
+    }
+
+    .wraper-devise {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-container {
+        align-items: flex-start;
+    }
+
+    .footer-social {
+        align-items: flex-start;
+    }
+
+    .wraper-footer-form {
+        align-items: flex-start;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .footer-container-flex {
+        flex-direction: row;
+        gap: 80px;
+        padding: 100px 0px;
+    }
+
+    .wraper-devise {
+        gap: 120px;
+    }
+}
+
 /* form-popap */
 
 .modal-overlay {
@@ -777,7 +836,7 @@ h3 {
 
 .modal {
     border-radius: 4px;
-    width: 408px;
+    min-width: 288px;
     min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #FCFCFC;
