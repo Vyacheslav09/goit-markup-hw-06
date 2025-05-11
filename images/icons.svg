@@ -48,5 +48,8 @@
         <symbol id="icon-checkmark" viewBox="0 0 32 32">
             <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
         </symbol>
+        <symbol id="icon-burger" viewBox="0 0 32 32">
+            <path d="M5 8a2 2 0 0 1 1-2h20a2 2 0 0 1 0 4H6a2 2 0 0 1-1-2zm0 8a2 2 0 0 1 1-2h20a2 2 0 0 1 0 4H6a2 2 0 0 1-1-2zm0 8a2 2 0 0 1 1-2h20a2 2 0 0 1 0 4H6a2 2 0 0 1-1-2z"/>
+        </symbol>
     </defs>
 </svg>

@@ -20,25 +20,27 @@
   </head>
   <body>
     <!-- #region header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="nav-panel">
           <a href="./index.html" class="logo header-logo">
             Web<span class="span-logo">Studio</span>
           </a>
-          <ul class="header-menu">
-            <li>
-              <a href="./index.html" class="link studio-link" id="link"
-                >Studio</a
-              >
-            </li>
-            <li>
-              <a href="#Portfolio" class="link">Portfolio</a>
-            </li>
-            <li>
-              <a href="" class="link">Contacts</a>
-            </li>
-          </ul>
+          <div class="wraper-header-device">
+            <ul class="header-menu">
+              <li>
+                <a href="./index.html" class="link studio-link" id="link"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a href="#Portfolio" class="link">Portfolio</a>
+              </li>
+              <li>
+                <a href="" class="link">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <address class="address-info">
           <ul class="address-menu">
@@ -54,21 +56,27 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="button-burger">
+          <svg width="24" height="24">
+            <use href="/images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
-    <!-- #endregion header -->
-    <main>
-      <!-- #region section 1 -->
-      <section class="section-first">
+    </header>
+  </body>
+  <!-- #endregion header -->
+  <main>
+    <!-- #region section 1 -->
+    <!-- <section class="section-first">
         <div class="container container-first">
           <h1 class="first-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button-service">Order Service</button>
         </div>
-      </section>
-      <!-- #endregion section 1 -->
+      </section> -->
+    <!-- #endregion section 1 -->
 
-      <!-- #region starting a business -->
-      <!-- <section class="section-business">
+    <!-- #region starting a business -->
+    <!-- <section class="section-business">
         <div class="container">
           <h2 class="visually-hidden">Starting a Business</h2>
           <ul class="business-table">
@@ -123,16 +131,17 @@
           </ul>
         </div>
       </section> -->
-      <!-- #endregion starting a business -->
+    <!-- #endregion starting a business -->
 
-      <!-- #region Our Team -->
-      <!-- <section class="section-team">
+    <!-- #region Our Team -->
+    <!-- <section class="section-team">
         <div class="container">
           <h2 class="section-team-title">Our Team</h2>
           <ul class="team-table">
             <li class="section-team-name">
               <img
                 src="./images/Mark.jpg"
+                srcset="./images/Mark.jpg x1, ./images/mark@2x.jpg 2x"
                 alt="Mark Guerrero icon"
                 width="264"
                 height="260"
@@ -176,6 +185,7 @@
             <li class="section-team-name">
               <img
                 src="./images/Tom.jpg"
+                srcset="./images/Tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 alt="Tom Ford icon"
                 width="264"
                 height="260"
@@ -219,6 +229,7 @@
             <li class="section-team-name">
               <img
                 src="./images/Camila.jpg"
+                srcset="./images/Camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 alt="Camila Garcia icon"
                 width="264"
                 height="260"
@@ -262,6 +273,7 @@
             <li class="section-team-name">
               <img
                 src="./images/Daniel.jpg"
+                srcset="./images/Daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 alt="Daniel Wilson icon"
                 width="264"
                 height="260"
@@ -305,10 +317,10 @@
           </ul>
         </div>
       </section> -->
-      <!-- #endregion Our Team -->
+    <!-- #endregion Our Team -->
 
-      <!-- #region Portfolio -->
-      <!-- <section class="section-portfolio">
+    <!-- #region Portfolio -->
+    <!-- <section class="section-portfolio">
         <div class="container">
           <h2 class="title-portfolio" id="Portfolio">Our Portfolio</h2>
           <ul class="portfolio-table">
@@ -316,6 +328,10 @@
               <div class="portfolio-container-overlay">
                 <img
                   src="./images/portfolio/banking.jpg"
+                  srcset="
+                    ./images/portfolio/banking.jpg 1x,
+                    ./images/jpg@2x/banking@2x.jpg 2x
+                  "
                   alt="App"
                   width="360"
                 />
@@ -335,6 +351,10 @@
               <div class="portfolio-container-overlay">
                 <img
                   src="./images/portfolio/cashless.jpg"
+                  srcset="
+                    ./images/portfolio/cashless.jpg 1x,
+                    ./images/jpg@2x/cashless@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -354,6 +374,10 @@
               <div class="portfolio-container-overlay">
                 <img
                   src="./images/portfolio/Meditation.jpg"
+                  srcset="
+                    ./images/portfolio/Meditation.jpg 1x,
+                    ./images/jpg@2x/meditation@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                 />
@@ -371,7 +395,15 @@
 
             <li class="portfolio-table-list">
               <div class="portfolio-container-overlay">
-                <img src="./images/portfolio/Taxi.jpg" alt="Taxi" width="360" />
+                <img
+                  src="./images/portfolio/Taxi.jpg"
+                  srcset="
+                    ./images/portfolio/Taxi.jpg 1x,
+                    ./images/jpg@2x/taxi@2x.jpg 2x
+                  "
+                  alt="Taxi"
+                  width="360"
+                />
                 <p class="portfolio-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -388,6 +420,10 @@
               <div class="portfolio-container-overlay">
                 <img
                   src="./images/portfolio/screen.jpg"
+                  srcset="
+                    ./images/portfolio/screen.jpg,
+                    ./images/jpg@2x/screen@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -407,6 +443,10 @@
               <div class="portfolio-container-overlay">
                 <img
                   src="./images/portfolio/online.jpg"
+                  srcset="
+                    ./images/portfolio/online.jpg 1x,
+                    ./images/jpg@2x/online@2x.jpg 2x
+                  "
                   alt="smiling girl"
                   width="360"
                 />
@@ -424,9 +464,9 @@
           </ul>
         </div>
       </section> -->
-      <!-- #endregion Portfolio -->
-    </main>
-    <!-- <footer class="footer">
+    <!-- #endregion Portfolio -->
+  </main>
+  <!-- <footer class="footer">
       <div class="container footer-container-flex">
         <div class="wraper-devise">
           <div class="footer-container">
@@ -496,9 +536,9 @@
       </div>
     </footer> -->
 
-    <!-- /* form-popap */ -->
+  <!-- /* form-popap */ -->
 
-    <!-- <div class="modal-overlay is-open">
+  <!-- <div class="modal-overlay is-open">
       <div class="modal">
         <button class="form-button-reset" type="button">
           <svg class="button-reset-svg" width="8" height="8">
@@ -590,5 +630,4 @@
         </form>
       </div>
     </div> -->
-  </body>
 </html>
