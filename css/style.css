@@ -857,10 +857,13 @@ h3 {
 }
 
 @media (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+
     .footer-container-flex {
         flex-direction: row;
         gap: 80px;
-        padding: 100px 0px;
     }
 
     .wraper-devise {
