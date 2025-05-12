@@ -171,6 +171,9 @@ h3 {
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.icon-burger-menu {
     fill: #2f2f37;
 }
 
