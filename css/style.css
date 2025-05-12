@@ -171,6 +171,7 @@ h3 {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    fill: #2f2f37;
 }
 
 @media (min-width: 768px) {
